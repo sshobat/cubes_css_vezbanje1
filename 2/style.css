@@ -1,0 +1,309 @@
+/* ROOT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap');
+
+:root {
+    --gray: rgb(74,74,74);
+    --lightgray: rgb(153,153,153);
+    --green: rgb(70,173,143);
+    --white: rgb(255,255,255);
+    --whitesmoke: rgb(247,247,247);
+    --bodyFont: 'Poppins', sans-serif;
+    --headingsFont: 'Roboto', sans-serif;
+    --transition: .3s ease;
+    --font: 16px;
+}
+
+/* GENERAL STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--bodyFont);
+    color: var(--lightgray);
+    font-size: var(--font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--gray);
+    font-family: var(--headingsFont);
+}
+
+.cf::before, .cf::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+li {
+    list-style-type: none;
+}
+
+header li {
+    float: left;
+    margin-right: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+span {
+    color: var(--green);
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto 0 auto;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-color: var(--gray);
+}
+
+header .container {
+    margin: 0 auto;
+}
+
+header h2 {
+    color: var(--white);
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    float: left;
+}
+
+header nav {
+    text-transform: uppercase;
+    float: left;
+    margin: 0;
+}
+
+header ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header ul li {
+    line-height: 68px;
+}
+
+header ul li::before {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: var(--green);
+    transition: var(--transition);
+}
+
+header ul li:hover::before {
+    width: 100%;
+}
+
+header li a {
+    color: var(--white);
+}
+
+header i {
+    color: var(--white);
+}
+
+#icons_header {
+    float: right;
+    line-height: 68px;
+}
+
+header #icons_header a {
+    margin-right: 25px;
+}
+
+/* FRONT SECTION */
+
+.front {
+    background-color: var(--whitesmoke);
+    text-align: center;
+}
+
+.container_front {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+.container_front div p {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+/* MAIN AND ASIDE */
+
+/* MAIN */
+
+.main_aside {
+    max-width: 800px;
+    margin: 80px auto;
+}
+
+main {
+    float: left;
+}
+
+main article {
+    max-width: 300px;
+    padding-right: 40px;
+}
+
+main article:nth-child(1)::after,
+main article:nth-child(2)::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--lightgray);
+    margin: 40px auto;
+}
+
+main img {
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+main i {
+    font-size: 2rem;
+    margin-right: 8px;
+}
+
+main i:nth-child(1) {
+    color: rgb(59,89,153);
+}
+main i:nth-child(2) {
+    color: rgb(1,173,239)
+}
+main i:nth-child(3) {
+    color: rgb(220,78,66)
+}
+main i:nth-child(4) {
+    color: rgb(200,33,40)
+}
+
+/* ASIDE */
+
+aside img {
+    max-width: 500px;
+    /* width: 100%; */
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.projects article {
+    float: left;
+    width: 33.33%;
+    
+}
+
+.projects img {
+    width: 100%;
+    height:530px;
+}
+
+.projects article {
+    height: 100%;
+    height: 530px;
+    
+}
+
+.projects article:nth-child(2) {
+    background-color: var(--green);
+    text-align: center;
+    color: var(--white);
+    
+    
+}
+
+.projects h4 {
+    color: var(--white);
+    letter-spacing: 0.1rem;
+    margin-top: 150px;
+    margin-bottom: 90px;
+    
+}
+
+.projects p {
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: var(--green);
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: var(--white);
+    border: solid 2px var(--white);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--gray);
+    color: var(--white);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer nav {
+    width: fit-content;
+    margin: 0 auto 30px auto;
+}
+
+footer li {
+    width: auto;
+    float: left;
+    margin-right: 25px;
+    text-transform: uppercase; 
+}
+
+footer li a {
+    color: var(--white);
+}
+
+footer i {
+    color: var(--white);
+    margin-right: 25px;
+}
+
+#icons_footer {
+    width: fit-content;
+    margin: 0 auto 15px auto;
+}
+
+footer p {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
